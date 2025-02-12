@@ -1012,10 +1012,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@nethserver/ns8-ui-lib@^0.1.22":
-  version "0.1.25"
-  resolved "https://registry.npmjs.org/@nethserver/ns8-ui-lib/-/ns8-ui-lib-0.1.25.tgz"
-  integrity sha512-jSYcG/PDd356Dvdb7BZkMBC+h9fxHvROWTrPsXRplCV4GsTcygO8Uc3H/ch3eo51Rre4qqrk/AP7j5Tzz3tBzQ==
+"@nethserver/ns8-ui-lib@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.npmmirror.com/@nethserver/ns8-ui-lib/-/ns8-ui-lib-1.0.3.tgz#757eb077f276074c710455d8094aa2f25788da53"
+  integrity sha512-TBCNFvcovPrFpuKdyPiadstV0s0a4kUWdsnxjbiFOJ1GsAOepLt+c8S9qZubdJxaQ2frb4Cklr3G8rRQbaI5jA==
   dependencies:
     "@rollup/plugin-json" "^4.1.0"
     core-js "^3.15.2"
@@ -2481,9 +2481,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001219:
-  version "1.0.30001639"
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001639.tgz"
-  integrity sha512-eFHflNTBIlFwP2AIKaYuBQN/apnUoKNhBdza8ZnW/h2di4LCZ4xFqYlxUxo+LQ76KFI1PGcC1QDxMbxTZpSCAg==
+  version "1.0.30001527"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001527.tgz"
+  integrity sha512-YkJi7RwPgWtXVSgK4lG9AHH57nSzvvOp9MesgXmw4Q7n0C3H04L0foHqfxcmSAm5AcWb8dW9AYj2tR7/5GnddQ==
 
 carbon-components@10.30.0:
   version "10.30.0"
