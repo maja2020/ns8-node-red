@@ -21,7 +21,7 @@ container=$(buildah from scratch)
 # Reuse existing nodebuilder-kickstart container, to speed up builds
 if ! buildah containers --format "{{.ContainerName}}" | grep -q nodebuilder-kickstart; then
     echo "Pulling NodeJS runtime..."
-    buildah from --name nodebuilder-kickstart -v "${PWD}:/usr/src:Z" docker.io/library/nodered/node-red:4.0.8-22
+    buildah from --name nodebuilder-kickstart -v "${PWD}:/usr/src:Z" docker.io/nodered/node-red:4.0.8-22
 fi
 
 echo "Build static UI files with node..."
