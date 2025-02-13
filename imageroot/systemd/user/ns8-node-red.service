@@ -4,31 +4,31 @@
 #
 
 #
-# This systemd unit starts a kickstart instance using Podman.
+# This systemd unit starts a ns8-node-red instance using Podman.
 # Most parts of this file come from podman-generate-systemd.
 #
 [Unit]
-Description=kickstart server
+Description=ns8-node-red server
 
 [Service]
 Environment=PODMAN_SYSTEMD_UNIT=%n
 EnvironmentFile=%S/state/environment
 WorkingDirectory=%S/state
 Restart=always
-ExecStartPre=/bin/rm -f %t/kickstart.pid %t/kickstart.ctr-id
+ExecStartPre=/bin/rm -f %t/ns8-node-red.pid %t/ns8-node-red.ctr-id
 ExecStartPre=-runagent discover-smarthost
 ExecStart=/usr/bin/podman run \
     --detach \
-    --conmon-pidfile=%t/kickstart.pid \
-    --cidfile=%t/kickstart.ctr-id \
+    --conmon-pidfile=%t/ns8-node-red.pid \
+    --cidfile=%t/ns8-node-red.ctr-id \
     --cgroups=no-conmon \
     --replace --name=%N \
     --publish=127.0.0.1:${TCP_PORT}:1880 \
     --env-file=smarthost.env \
     ${ECHO_SERVER_IMAGE}
-ExecStop=/usr/bin/podman stop --ignore --cidfile %t/kickstart.ctr-id -t 10
-ExecStopPost=/usr/bin/podman rm --ignore -f --cidfile %t/kickstart.ctr-id
-PIDFile=%t/kickstart.pid
+ExecStop=/usr/bin/podman stop --ignore --cidfile %t/ns8-node-red.ctr-id -t 10
+ExecStopPost=/usr/bin/podman rm --ignore -f --cidfile %t/ns8-node-red.ctr-id
+PIDFile=%t/ns8-node-red.pid
 Type=forking
 
 [Install]

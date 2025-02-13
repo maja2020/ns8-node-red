@@ -1,7 +1,7 @@
 {
-  "name": "kickstart",
+  "name": "ns8-node-red",
   "description": {
-    "en": "My kickstart module"
+    "en": "My ns8-node-red module"
   },
   "categories": [],
   "authors": [
@@ -11,9 +11,9 @@
     }
   ],
   "docs": {
-    "documentation_url": "https://docs.kickstart.com/",
+    "documentation_url": "https://docs.ns8-node-red.com/",
     "bug_url": "https://github.com/NethServer/dev",
-    "code_url": "https://github.com/author/ns8-kickstart"
+    "code_url": "https://github.com/author/ns8-ns8-node-red"
   },
-  "source": "ghcr.io/nethserver/kickstart"
+  "source": "ghcr.io/nethserver/ns8-node-red"
 }
