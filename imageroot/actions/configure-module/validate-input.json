@@ -1,8 +1,38 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "configure-module input",
-    "$id": "http://schema.nethserver.org/ns8-node-red/configure-module-input.json",
+    "title": "Configure ns8-node-red",
+    "$id": "http://nethserver.org/json-schema/task/input/ns8-node-red/configure",
     "description": "Configure ns8-node-red",
-    "examples": [],
-    "type": "object"
-}
+    "examples": [
+      {
+        "host": "ns8-node-red.yourdomain.org",
+        "lets_encrypt": false,
+        "http2https": true
+      }
+    ],
+    "type": "object",
+    "required": [
+      "host",
+      "lets_encrypt",
+      "http2https"
+    ],
+    "properties": {
+      "host": {
+        "type": "string",
+        "description": "Host name for node-red, like 'ns8-node-red.yourdomain.org'",
+        "format": "hostname",
+        "pattern": "\\."
+      },
+      "lets_encrypt": {
+        "type": "boolean",
+        "title": "Let's Encrypt certificate",
+        "description": "Request a valid Let's Encrypt certificate."
+      },
+      "http2https": {
+        "type": "boolean",
+        "title": "HTTP to HTTPS redirection",
+        "description": "Redirect all the HTTP requests to HTTPS"
+      }
+      
+    }
+  }
