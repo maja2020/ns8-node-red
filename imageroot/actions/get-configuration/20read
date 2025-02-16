@@ -18,7 +18,7 @@ import subprocess
 # Prepare return variable
 config = {}
 
-config["host"] =  os.environ.get("TRAEFIK_HOST")
+config["host"] =  os.environ.get("TRAEFIK_HOST","")
 config["http2https"] =  os.environ.get("TRAEFIK_HTTP2HTTPS") == "True"
 config["lets_encrypt"] =  os.environ.get("TRAEFIK_LETS_ENCRYPT") == "True"
 
