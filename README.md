@@ -26,7 +26,7 @@ Example:
 ```
 api-cli run configure-module --agent module/ns8-node-red1 --data - <<EOF
 {
-  "host": "kickstart.domain.com",
+  "host": "mynodered.domain.com",
   "http2https": true,
   "lets_encrypt": false
 }
