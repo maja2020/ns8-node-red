@@ -18,20 +18,20 @@ Output example:
 
 Launch configure-module, by setting the following parameters:
 
-    host: a fully qualified domain name for the application
-    http2https: enable or disable HTTP to HTTPS redirection (true/false)
-    lets_encrypt: enable or disable Let's Encrypt certificate (true/false)
+- host: a fully qualified domain name for the application
+- http2https: enable or disable HTTP to HTTPS redirection (true/false)
+- lets_encrypt: enable or disable Let's Encrypt certificate (true/false)
 
 Example:
-
-api-cli run configure-module --agent module/kickstart1 --data - <<EOF
+```
+api-cli run configure-module --agent module/ns8-node-red1 --data - <<EOF
 {
   "host": "kickstart.domain.com",
   "http2https": true,
   "lets_encrypt": false
 }
 EOF
-
+```
 The above command will:
     start and configure the kickstart instance
     configure a virtual host for trafik to access the instance
