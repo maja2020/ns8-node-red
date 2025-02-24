@@ -7,7 +7,7 @@ refs:
 
 Instantiate the module with:
 
-    add-module ghcr.io/maja2020/nethserver/ns8-node-red:latest 1
+    add-module ghcr.io/maja2020/ns8-node-red:latest 1
 
 The output of the command will return the instance name.
 Output example:
