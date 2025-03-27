@@ -18,17 +18,17 @@ reponame="ns8-node-red"
 # Create a new empty container image
 container=$(buildah from scratch)
 
-# Reuse existing nodebuilder-ns8-node-red container, to speed up builds
-if ! buildah containers --format "{{.ContainerName}}" | grep -q nodebuilder-ns8-node-red; then
+# Reuse existing nodebuilder-node-red container, to speed up builds
+if ! buildah containers --format "{{.ContainerName}}" | grep -q nodebuilder-node-red; then
     echo "Pulling NodeJS runtime..."
-    buildah from --name nodebuilder-ns8-node-red -v "${PWD}:/usr/src:Z" docker.io/library/node:lts
+    buildah from --name nodebuilder-node-red -v "${PWD}:/usr/src:Z" docker.io/library/node:lts
 fi
 
 echo "Build static UI files with node..."
 buildah run \
     --workingdir=/usr/src/ui \
     --env="NODE_OPTIONS=--openssl-legacy-provider" \
-    nodebuilder-ns8-node-red \
+    nodebuilder-node-red \
     sh -c "yarn install && yarn build"
 
 # Add imageroot directory to the container image

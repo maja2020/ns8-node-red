@@ -24,8 +24,8 @@
         <cv-tile light>
           <cv-form @submit.prevent="configureModule">
             <cv-text-input
-              :label="$t('settings.ns8-node-red_fqdn')"
-              placeholder="ns8-node-red.example.org"
+              :label="$t('settings.node-red_fqdn')"
+              placeholder="node-red.example.org"
               v-model.trim="host"
               class="mg-bottom"
               :invalid-message="$t(error.host)"

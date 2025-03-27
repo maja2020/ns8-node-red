@@ -1,11 +1,11 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Configure ns8-node-red",
-    "$id": "http://nethserver.org/json-schema/task/input/ns8-node-red/configure",
-    "description": "Configure ns8-node-red",
+    "title": "Configure node-red",
+    "$id": "http://nethserver.org/json-schema/task/input/node-red/configure",
+    "description": "Configure node-red",
     "examples": [
       {
-        "host": "ns8-node-red.yourdomain.org",
+        "host": "node-red.yourdomain.org",
         "lets_encrypt": false,
         "http2https": true
       }
@@ -19,7 +19,7 @@
     "properties": {
       "host": {
         "type": "string",
-        "description": "Host name for node-red, like 'ns8-node-red.yourdomain.org'",
+        "description": "Host name for node-red, like 'node-red.yourdomain.org'",
         "format": "hostname",
         "pattern": "\\."
       },

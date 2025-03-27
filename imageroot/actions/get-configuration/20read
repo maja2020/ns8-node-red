@@ -6,7 +6,7 @@
 #
 
 #
-# Read ns8-node-red configuration
+# Read node-red configuration
 #
 
 import os

@@ -1,19 +1,19 @@
 {
-  "name": "ns8-node-red",
+  "name": "node-red",
   "description": {
-    "en": "My ns8-node-red module"
+    "en": "Install your own node-red instance"
   },
-  "categories": [],
+  "categories": ["(home) automation"],
   "authors": [
     {
-      "name": "Name Surname",
-      "email": "author@yourmail.org"
+      "name": "maja2020",
+      "email": "maja2020@gmx.com"
     }
   ],
   "docs": {
-    "documentation_url": "https://docs.ns8-node-red.com/",
-    "bug_url": "https://github.com/NethServer/dev",
-    "code_url": "https://github.com/author/ns8-ns8-node-red"
+    "documentation_url": "-",
+    "bug_url": "-",
+    "code_url": "https://github.com/maja2020/ns8-ns8-node-red"
   },
-  "source": "ghcr.io/nethserver/ns8-node-red"
+  "source": "ghcr.io/maja2020/ns8-node-red"
 }

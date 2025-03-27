@@ -9,5 +9,5 @@
 
 touch smarthost.env
 
-systemctl --user enable ns8-node-red.service
-systemctl --user restart ns8-node-red.service
+systemctl --user enable node-red.service
+systemctl --user restart node-red.service

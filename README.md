@@ -1,7 +1,5 @@
 #ns8-node-red
-
-This module node-red v4
-refs: 
+refs: node-red:4.0.9 docker.io
 
 ## Install
 
@@ -12,7 +10,7 @@ Instantiate the module with:
 The output of the command will return the instance name.
 Output example:
 
-    {"module_id": "ns8-node-red1", "image_name": "ns8-node-red", "image_url": "ghcr.io/maja2020/ns8-node-red:latest"}
+    {"module_id": "node-red1", "image_name": "node-red", "image_url": "ghcr.io/maja2020/ns8-node-red:latest"}
 
 ## Configure
 
@@ -24,7 +22,7 @@ Launch configure-module, by setting the following parameters:
 
 Example:
 ```
-api-cli run configure-module --agent module/ns8-node-red1 --data - <<EOF
+api-cli run configure-module --agent module/node-red1 --data - <<EOF
 {
   "host": "mynodered.domain.com",
   "http2https": true,
@@ -40,7 +38,7 @@ The above command will:
 
 To uninstall the instance:
 
-    remove-module --no-preserve ns8-node-red1
+    remove-module --no-preserve node-red1
 
 # Known issues
 None at the moment, but:
