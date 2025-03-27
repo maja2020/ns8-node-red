@@ -13,7 +13,7 @@ images=()
 # The image will be pushed to GitHub container registry
 repobase="${REPOBASE:-ghcr.io/maja2020}"
 # Configure the image name
-reponame="ns8-node-red"
+reponame="node-red"
 
 # Create a new empty container image
 container=$(buildah from scratch)
@@ -21,7 +21,7 @@ container=$(buildah from scratch)
 # Reuse existing nodebuilder-node-red container, to speed up builds
 if ! buildah containers --format "{{.ContainerName}}" | grep -q nodebuilder-node-red; then
     echo "Pulling NodeJS runtime..."
-    buildah from --name nodebuilder-node-red -v "${PWD}:/usr/src:Z" docker.io/library/node:lts
+    buildah from --name nodebuilder-node-red -v "${PWD}:/usr/src:Z" docker.io/library/node:18.20.7-alpine
 fi
 
 echo "Build static UI files with node..."

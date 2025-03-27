@@ -13,7 +13,7 @@
   "docs": {
     "documentation_url": "-",
     "bug_url": "-",
-    "code_url": "https://github.com/maja2020/ns8-ns8-node-red"
+    "code_url": "https://github.com/maja2020/ns8-node-red"
   },
-  "source": "ghcr.io/maja2020/ns8-node-red"
+  "source": "ghcr.io/maja2020/node-red"
 }

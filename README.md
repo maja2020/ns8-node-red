@@ -1,16 +1,17 @@
-#ns8-node-red
+#node-red as ns8 module
+
 refs: node-red:4.0.9 docker.io
 
 ## Install
 
 Instantiate the module with:
 
-    add-module ghcr.io/maja2020/ns8-node-red:latest 1
+    add-module ghcr.io/maja2020/node-red:latest 1
 
 The output of the command will return the instance name.
 Output example:
 
-    {"module_id": "node-red1", "image_name": "node-red", "image_url": "ghcr.io/maja2020/ns8-node-red:latest"}
+    {"module_id": "node-red1", "image_name": "node-red", "image_url": "ghcr.io/maja2020/node-red:latest"}
 
 ## Configure
 
