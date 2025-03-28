@@ -1,9 +1,9 @@
 {
   "name": "node-red",
   "description": {
-    "en": "Install your own node-red instance"
+    "en": "Install your own node-red v4 instance"
   },
-  "categories": ["(home) automation"],
+  "categories": ["monitoring"],
   "authors": [
     {
       "name": "maja2020",
@@ -11,7 +11,7 @@
     }
   ],
   "docs": {
-    "documentation_url": "-",
+    "documentation_url": "https://nodered.org/docs/",
     "bug_url": "-",
     "code_url": "https://github.com/maja2020/ns8-node-red"
   },
