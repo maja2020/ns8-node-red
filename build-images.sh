@@ -40,7 +40,7 @@ buildah config --entrypoint=/ \
     --label="org.nethserver.tcp-ports-demand=1" \
     --label="org.nethserver.rootfull=0" \
     --label="org.nethserver.min-from=1.3.0" \
-    --label="org.nethserver.images=ghcr.io/node-red/node-red:4.0.9" \
+    --label="org.nethserver.images=docker.io/nodered/node-red:4.0.9" \
     "${container}"
 # Commit the image
 buildah commit "${container}" "${repobase}/${reponame}"
