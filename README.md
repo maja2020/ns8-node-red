@@ -6,12 +6,12 @@ refs: node-red:4.0.9 docker.io
 
 Instantiate the module with:
 
-    add-module ghcr.io/maja2020/node-red:latest 1
+    add-module ghcr.io/maja2020/node-red:1.0.2 1
 
 The output of the command will return the instance name.
 Output example:
 
-    {"module_id": "node-red1", "image_name": "node-red", "image_url": "ghcr.io/maja2020/node-red:latest"}
+    {"module_id": "node-red1", "image_name": "node-red", "image_url": "ghcr.io/maja2020/node-red:1.0.2"}
 
 ## Configure
 
@@ -41,8 +41,9 @@ To uninstall the instance:
 
     remove-module --no-preserve node-red1
 
+## Update
+api-cli run update-module --data '{"module_url":"ghcr.io/maja2020/node-red:1.0.2","instances":["node-red1"],"force":true}'
+
 # Known issues
 None at the moment, but:
-- Installing works fine, updates still to be tested
 - Still some unsolved erorrs in the Github automated test scripts
-- Publish the version of the package on Github
